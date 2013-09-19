@@ -1,11 +1,14 @@
 sum = 2
+a = 1
+b = 2
+fib = 0
 
-
-for x in range(1,10):
-	a = 1
-	b = 2
-
+while fib < 4000000:
 	fib = a + b
-	print(fib)
+	a = b
+	b = fib
+	if (fib % 2 == 0):
+		sum += fib
+	
 
 print(sum)
