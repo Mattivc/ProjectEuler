@@ -1,5 +1,9 @@
-sum = 0
-for i in range(0,1000):
-	if(i % 3 == 0) or (i % 5 == 0):
-		sum += i
-print(sum)
+targetVal = 999
+
+def SumDivisibleBy(n):
+	p = int(targetVal / n)
+	sum = n*(p*(p+1)) / 2 # 1+2+3+...+n=1/2*n*(n+1)
+	return int(sum)
+
+print(SumDivisibleBy(3) + SumDivisibleBy(5) - SumDivisibleBy(15))
+# Solution: 233168
