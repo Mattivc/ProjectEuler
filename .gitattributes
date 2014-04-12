@@ -1,2 +1,6 @@
+# Source files
+*		text=auto
+*.py	text eol=lf
+
 # Keep pdf files binary
-*.pdf binary
+*.pdf	binary
