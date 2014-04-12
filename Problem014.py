@@ -17,7 +17,7 @@ def Collatz(n):
 largest_num = 0
 largest_chain = 0
 
-for i in range(1, 1000000): # 871
+for i in range(1, 1000000):
 	chain = Collatz(i)
 	if (chain > largest_chain):
 		largest_chain = chain
