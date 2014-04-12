@@ -1,9 +1,8 @@
 from numpy import loadtxt
 import os
+import string
 path = os.path.dirname(__file__)
 data = loadtxt(os.path.join(path, "Problem022_data.txt"), delimiter=',', dtype=str)
-
-alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 for name in data:
 	name = name.replace('"',"")
@@ -15,7 +14,7 @@ val = 0
 def get_name_value(name):
 	nameVal = 0
 	for i in range(len(name)):
-		nameVal += alphabet.find(name[i])+1
+		nameVal += string.ascii_uppercase.find(name[i])+1
 	return nameVal
 
 for i in range(len(data)):
