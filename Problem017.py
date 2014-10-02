@@ -25,6 +25,7 @@ for x in range(1, 1001):
 				nString += tensString[tens]
 			if (ones != 0):
 				nString += onesStrings[ones]
+	print nString
 	i += len(nString)
 	
 

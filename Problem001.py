@@ -6,4 +6,3 @@ def SumDivisibleBy(n):
 	return int(sum)
 
 print(SumDivisibleBy(3) + SumDivisibleBy(5) - SumDivisibleBy(15))
-# Solution: 233168
