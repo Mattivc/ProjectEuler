@@ -1,7 +1,7 @@
 from numpy import loadtxt
 import os
 path = os.path.dirname(__file__)
-data = loadtxt(os.path.join(path,"Problem011_data.txt"), delimiter=' ')
+data = loadtxt(os.path.join(path,"011_data.txt"), delimiter=' ')
 
 directions = [[0,1],[1,1],[1,0],[1,-1]]
 

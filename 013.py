@@ -1,7 +1,7 @@
 from numpy import loadtxt
 import os
 path = os.path.dirname(__file__)
-data = loadtxt(os.path.join(path,"Problem013_data.txt"), delimiter=' ')
+data = loadtxt(os.path.join(path,"013_data.txt"), delimiter=' ')
 
 sum = 0
 n = 38 # A n value of 39 is sufficient for the rigth answer with this data.

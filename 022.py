@@ -2,7 +2,7 @@ from numpy import loadtxt
 import os
 import string
 path = os.path.dirname(__file__)
-data = loadtxt(os.path.join(path, "Problem022_data.txt"), delimiter=',', dtype=str)
+data = loadtxt(os.path.join(path, "022_data.txt"), delimiter=',', dtype=str)
 
 for name in data:
 	name = name.replace('"',"")

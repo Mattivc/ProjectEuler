@@ -1,7 +1,7 @@
 
 triangle = []
 
-with open('Problem067_data.txt') as f:
+with open('067_data.txt') as f:
 	for line in f:
 		line_array = []
 		for n in line.split(' '):
