@@ -1,11 +1,20 @@
+from math import sqrt
+
+memo = {}
 
 def is_prime(n):
+	if n in memo:
+		return memo[n]
+
 	if(n < 2):
+		memo[n] = False
 		return False
 
-	for x in range(2,n):
+	for x in range(2,int(sqrt(n))+1):
 		if(n % x == 0):
+			memo[n] = False
 			return False
+	memo[n] = True
 	return True
 
 def factorize(n):
