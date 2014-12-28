@@ -16,10 +16,10 @@ def is_palindrome(n):
 
 solution = 0
 
-for x in range(100,1000):
-	for y in range(100,1000):
+for x in reversed(range(100, 1000)):
+	for y in reversed(range(100, x+1)):
 		n = x*y
-		if(is_palindrome(n) and n > solution):
+		if(n > solution and is_palindrome(n)):
 			solution = n 
 
 print(solution)
