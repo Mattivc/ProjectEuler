@@ -1,3 +1,13 @@
+"""
+Project Euler Problem 15
+========================
+
+Starting in the top left corner of a 2 * 2 grid, there are 6 routes
+(without backtracking) to the bottom right corner.
+
+How many routes are there through a 20 * 20 grid?
+"""
+
 from math import factorial
 
 # Combinatorial solution
@@ -5,7 +15,7 @@ from math import factorial
 def get_path_number_combinatorial(x, y):
 	return factorial(x + y) / (factorial(x) * factorial(y))
 
-print(get_path_number_combinatorial(20,20))
+#print(get_path_number_combinatorial(20,20))
 
 # Recursive solution with caching
 dataCache = { (0,0): 1 }
